@@ -25,5 +25,42 @@ if sākums == "50":
 elif sākums == "100": 
     pakape = [random.randint(1, 100) for _ in range(5)]
     secība = sorted(pakape)
-print(secība)
+
+
+
+def minejums2():
+    att = 2 
+    minejums2 = "" 
+    while att > 1:
+        if minejums2 not in range(1,51):
+            att + 0
+            print("Tev vajag ievadīt no 1 līdz 50.")
+        else:
+            att-=1
+           
+        minejums2 = int(input("Mēģini uzminēt 5 skaitļus111:"))  
+        
+print(minejums2())
+
+
+
+
+# Guessing game no 1 - 10
+
+import random
+    
+num = random.randint(1, 10)
+guess = None
+    
+while guess != num:
+    guess = input("guess a number between 1 and 10: ")
+    guess = int(guess)
+    
+    if guess == num:
+        print("congratulations! you won!")
+        break
+    else:
+        print("nope, sorry. try again!")
+
+
 
