@@ -10,36 +10,36 @@ print(
 
 import random
 
-
 pakapes_izvele= int(input("Izvēlies grūtības pakāpi 50 vai 100: "))
-def sakums():
-    if pakapes_izvele == "50": 
-        rand_skaitlis = [random.randint(1, 51)] 
-    
-    elif pakapes_izvele == "100": 
-        rand_skaitlis = [random.randint(1, 101)]
-    else:
-        print("Ieraksti 50 vai 100.")
-    
-
 
 def minejums():
-    
       
     while True:
-        minējums = int(input("Ieraksti skaitli:")) 
+        minējums = int(input("Ieraksti skaitli:"))
          
         if minējums > 1 and minējums < pakapes_izvele:
-            print(minējums)
-            break
+            return int(minējums)
+            
         
         else:
             print(f"Minējumam jābūt ietvaros no 1 līdz {pakapes_izvele}.")
             
-            
-
-
 print(minejums())
+
+
+
+def sakums():
+    
+    if pakapes_izvele == "50": 
+        rand_skaitlis1 = [random.randint(1, 51)] 
+        return int(rand_skaitlis1)
+        
+    elif pakapes_izvele == "100": 
+        rand_skaitlis1 = [random.randint(1, 101)]
+        return int(rand_skaitlis1)
+        
+        
+print(sakums())
 
 
 
