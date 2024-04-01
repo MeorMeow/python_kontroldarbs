@@ -42,6 +42,9 @@ def minējums(max_skaitlis):
             print(f"Paldies par spēli! Tavs punktu skaits ir {punktu_skaits} ")
             break
         
+        elif mans_minejums < 1 or mans_minejums > max_skaitlis:
+            print(f"Minējumam jābūt ietvaros no 1 līdz {max_skaitlis}. Mēģini vēlreiz.")
+            
         else:
             print(f"Tu neuzminēji. Skaitlis bija {random_skaitlis}.")
             punktu_skaits -= 2
@@ -60,4 +63,4 @@ def lai_stradātu():
              minējums(100)
 
 lai_stradātu()
-
+    
