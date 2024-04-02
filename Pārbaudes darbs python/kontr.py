@@ -62,5 +62,4 @@ def lai_stradātu():
         else:
              minējums(100)
 
-lai_stradātu()
-    
+print(lai_stradātu())
